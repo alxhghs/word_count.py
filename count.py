@@ -1,4 +1,7 @@
-file_location = "/Users/Alex/Programming/Python/word counter/" + input("Enter file name: ")
+import os
+cwd = os.getcwd()
+
+file_location = cwd + '/' + input("Enter file name: ")
 
 """read text and split into a list"""
 with open (file_location, "r") as myfile:
